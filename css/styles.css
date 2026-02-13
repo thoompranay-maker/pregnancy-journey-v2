@@ -174,14 +174,8 @@ h3 i {
     height: 50px;
     margin-right: 10px;
     vertical-align: middle;
-    animation: floatIcon 3s ease-in-out infinite;
 }
 
-@keyframes floatIcon {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-4px); }
-    100% { transform: translateY(0px); }
-}
 
 .card h2,
 .card h3 {
