@@ -14,12 +14,14 @@ h1 {
 }
 
 .card {
-    background: white;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 12px;
-    width: 300px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
 }
 
 .progress-bar {
