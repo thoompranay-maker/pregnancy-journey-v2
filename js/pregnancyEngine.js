@@ -52,6 +52,8 @@ export function calculatePregnancyData(lmp) {
         minutesRemaining,
         secondsRemaining,
         pregnancyProgress,
-        trimester
+        trimester,
+        lmpDateString: lmp.toDateString(),
+    daysSinceLMP: diffDays
     };
 }
