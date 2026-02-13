@@ -1,1 +1,26 @@
 
+export function renderDashboard(data) {
+    const dashboard = document.getElementById("dashboard");
+
+    dashboard.innerHTML = `
+        <div class="card">
+            <h2>Week ${data.currentWeek}</h2>
+            <p>Day ${data.currentDay}</p>
+        </div>
+
+        <div class="card">
+            <h3>Due Date</h3>
+            <p>${data.dueDate.toDateString()}</p>
+        </div>
+
+        <div class="card">
+            <h3>Days Remaining</h3>
+            <p>${data.daysRemaining} days</p>
+        </div>
+
+        <div class="card">
+            <h3>Pregnancy Progress</h3>
+            <p>${data.pregnancyProgress}%</p>
+        </div>
+    `;
+}
