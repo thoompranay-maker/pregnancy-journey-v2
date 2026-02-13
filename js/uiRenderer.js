@@ -16,7 +16,7 @@ export function renderDashboard(data) {
         </div>
 
         <div class="card">
-            <div><img src="assets/icons/3d-countdown.png" class="icon-3d" /> <div>
+            <div><img src="assets/icons/3d-countdown.png" class="icon-3d" /> </div>
             <h3> Countdown</h3>
             <p>${data.daysRemaining} days</p>
             <p>${data.hoursRemaining} hours</p>
