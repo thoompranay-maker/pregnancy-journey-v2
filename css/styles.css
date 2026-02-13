@@ -50,3 +50,38 @@ h1 {
 .card:hover {
     transform: translateY(-5px);
 }
+
+.progress-circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+}
+
+svg {
+    transform: rotate(-90deg);
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 12;
+}
+
+.circle-progress {
+    fill: none;
+    stroke: #ff6f91;
+    stroke-width: 12;
+    stroke-linecap: round;
+    stroke-dasharray: 440;
+    transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.circle-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+}
