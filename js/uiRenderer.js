@@ -67,3 +67,19 @@ export function renderMilestones(data) {
         </div>
     `;
 }
+
+export function renderPhotos() {
+    const container = document.getElementById("screen-container");
+
+    container.innerHTML = `
+        <div class="card">
+            <h3>Our Pregnancy Photos</h3>
+            <div class="photo-grid">
+                <img src="assets/photo1.jpg" />
+                <img src="assets/photo2.jpg" />
+                <img src="assets/photo3.jpg" />
+                <img src="assets/photo4.jpg" />
+            </div>
+        </div>
+    `;
+}
