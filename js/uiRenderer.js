@@ -22,11 +22,28 @@ export function renderDashboard(data) {
 
 <div class="card">
     <h3>Pregnancy Progress</h3>
-    <div class="progress-bar">
-        <div class="progress-fill" style="width:${data.pregnancyProgress}%"></div>
+    <div class="progress-circle">
+        <svg width="150" height="150">
+            <circle
+                cx="75"
+                cy="75"
+                r="65"
+                class="circle-bg"
+            />
+            <circle
+                cx="75"
+                cy="75"
+                r="65"
+                class="circle-progress"
+                style="stroke-dashoffset: ${440 - (440 * data.pregnancyProgress) / 100}"
+            />
+        </svg>
+        <div class="circle-text">
+            ${data.pregnancyProgress}%
+        </div>
     </div>
-    <p>${data.pregnancyProgress}%</p>
 </div>
+
 
     `;
 }
