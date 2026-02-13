@@ -7,7 +7,7 @@ export function renderDashboard(data) {
             <!-- Trimester -->
             <div class="card">
             <div class="icon-wrapper">
-            <div><img src="assets/icons/3d-pregnant.png" class="icon-3d" /> </div>
+            <div><img src="assets/icons/3d-flower.png" class="icon-3d" /> </div>
             </div>
                 <h3>Trimester</h3>
                 <p class="sub-text">🌸 Your journey stage</p>
@@ -37,7 +37,7 @@ export function renderDashboard(data) {
                     <!-- LMP Date -->
             <div class="card">
             <div class="icon-wrapper">
-            <div><img src="assets/icons/3d-calender.png" class="icon-3d" /> </div>
+            <div><img src="assets/icons/3d-plant.png" class="icon-3d" /> </div>
             </div>
                 <h3>LMP Date</h3>
                 <p class="sub-text">🌱 Where it all began</p>
@@ -49,7 +49,7 @@ export function renderDashboard(data) {
            <!-- Days Since LMP -->
             <div class="card">
             <div class="icon-wrapper">
-            <div><img src="assets/icons/3d-calender.png" class="icon-3d" /> </div>
+            <div><img src="assets/icons/3d-date.png" class="icon-3d" /> </div>
             </div>
                 <h3>Days Since LMP</h3>
                 <p class="sub-text">⏳ Love in progress</p>
