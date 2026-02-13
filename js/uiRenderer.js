@@ -3,10 +3,12 @@ export function renderDashboard(data) {
     const dashboard = document.getElementById("dashboard");
 
     dashboard.innerHTML = `
-        <div class="card">
-            <h2>Week ${data.currentWeek}</h2>
-            <p>Day ${data.currentDay}</p>
-        </div>
+<div class="card">
+    <h2>Week ${data.currentWeek}</h2>
+    <p>Day ${data.currentDay}</p>
+    <p><strong>${data.trimester}</strong></p>
+</div>
+
 
         <div class="card">
             <h3>Due Date</h3>
