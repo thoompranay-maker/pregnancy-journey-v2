@@ -2,6 +2,7 @@ export function renderDashboard(data) {
     const container = document.getElementById("screen-container");
 
     container.innerHTML = `
+        <div class="dashboard-grid">
         <div class="card">
             <div class="icon-wrapper">
             <div><img src="assets/icons/3d-pregnant.png" class="icon-3d" /> </div>
@@ -48,6 +49,7 @@ export function renderDashboard(data) {
             </div>
         </div>
     `;
+    </div>
 }
 
 export function renderTimeline(data) {
