@@ -20,9 +20,13 @@ export function renderDashboard(data) {
             <p>${data.daysRemaining} days</p>
         </div>
 
-        <div class="card">
-            <h3>Pregnancy Progress</h3>
-            <p>${data.pregnancyProgress}%</p>
-        </div>
+<div class="card">
+    <h3>Pregnancy Progress</h3>
+    <div class="progress-bar">
+        <div class="progress-fill" style="width:${data.pregnancyProgress}%"></div>
+    </div>
+    <p>${data.pregnancyProgress}%</p>
+</div>
+
     `;
 }
