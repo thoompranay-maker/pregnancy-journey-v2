@@ -1,1 +1,23 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #fde2e4, #e2ece9);
+    text-align: center;
+}
 
+.container {
+    padding: 30px;
+}
+
+h1 {
+    color: #444;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
