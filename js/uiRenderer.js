@@ -1,6 +1,6 @@
 
 export function renderDashboard(data) {
-    const dashboard = document.getElementById("dashboard");
+const dashboard = document.getElementById("screen-container");
 
     dashboard.innerHTML = `
 <div class="card">
