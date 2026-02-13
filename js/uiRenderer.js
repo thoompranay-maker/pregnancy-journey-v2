@@ -3,18 +3,19 @@ export function renderDashboard(data) {
 
     container.innerHTML = `
         <div class="card">
-            <h2><i class="fa-solid fa-baby"></i> Week ${data.currentWeek}</h2>
+            <h2><img src="assets/icons/3d-pregnant.png" class="icon-3d" /> Week ${data.currentWeek}</h2>
+
             <p>Day ${data.currentDay}</p>
             <p><strong>${data.trimester}</strong></p>
         </div>
 
         <div class="card">
-            <h3><i class="fa-solid fa-calendar-days"></i> Due Date</h3>
+            <h3><img src="assets/icons/3d-calender.png" class="icon-3d" /> Due Date</h3>
             <p>${data.dueDate.toDateString()}</p>
         </div>
 
         <div class="card">
-            <h3><i class="fa-solid fa-hourglass-half"></i> Countdown</h3>
+            <h3><img src="assets/icons/3d-countdown.png" class="icon-3d" /> Countdown</h3>
             <p>${data.daysRemaining} days</p>
             <p>${data.hoursRemaining} hours</p>
             <p>${data.minutesRemaining} minutes</p>
@@ -22,7 +23,7 @@ export function renderDashboard(data) {
         </div>
 
         <div class="card">
-            <h3><i class="fa-solid fa-heart-pulse"></i> Pregnancy Progress</h3>
+            <h3><img src="assets/icons/3d-heart.png" class="icon-3d" /> Pregnancy Progress</h3>
             <div class="progress-circle">
                 <svg width="150" height="150">
                     <circle cx="75" cy="75" r="65" class="circle-bg"/>
