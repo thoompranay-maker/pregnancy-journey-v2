@@ -12,13 +12,17 @@ export function renderDashboard(data) {
         </div>
 
         <div class="card">
+            <div class="icon-wrapper">
             <div><img src="assets/icons/3d-calender.png" class="icon-3d" /> </div>
+            </div>
             <h3> Due Date</h3>
             <p>${data.dueDate.toDateString()}</p>
         </div>
 
         <div class="card">
+            <div class="icon-wrapper">
             <div><img src="assets/icons/3d-countdown.png" class="icon-3d" /> </div>
+            </div>
             <h3> Countdown</h3>
             <p>${data.daysRemaining} days</p>
             <p>${data.hoursRemaining} hours</p>
@@ -27,7 +31,9 @@ export function renderDashboard(data) {
         </div>
 
         <div class="card">
+            <div class="icon-wrapper">
             <div><img src="assets/icons/3d-heart.png" class="icon-3d" /> <div> 
+            </div>
             <h3> Pregnancy Progress</h3>
             <div class="progress-circle">
                 <svg width="150" height="150">
