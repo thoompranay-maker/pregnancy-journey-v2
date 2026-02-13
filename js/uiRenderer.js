@@ -10,12 +10,14 @@ export function renderDashboard(data) {
         </div>
 
         <div class="card">
-            <h3><img src="assets/icons/3d-calender.png" class="icon-3d" /> Due Date</h3>
+            <div><img src="assets/icons/3d-calender.png" class="icon-3d" /> </div>
+            <h3> Due Date</h3>
             <p>${data.dueDate.toDateString()}</p>
         </div>
 
         <div class="card">
-            <h3><img src="assets/icons/3d-countdown.png" class="icon-3d" /> Countdown</h3>
+            <div><img src="assets/icons/3d-countdown.png" class="icon-3d" /> <div>
+            <h3> Countdown</h3>
             <p>${data.daysRemaining} days</p>
             <p>${data.hoursRemaining} hours</p>
             <p>${data.minutesRemaining} minutes</p>
@@ -23,7 +25,8 @@ export function renderDashboard(data) {
         </div>
 
         <div class="card">
-            <h3><img src="assets/icons/3d-heart.png" class="icon-3d" /> Pregnancy Progress</h3>
+            <div><img src="assets/icons/3d-heart.png" class="icon-3d" /> <div> 
+            <h3> Pregnancy Progress</h3>
             <div class="progress-circle">
                 <svg width="150" height="150">
                     <circle cx="75" cy="75" r="65" class="circle-bg"/>
