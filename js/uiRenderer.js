@@ -3,8 +3,8 @@ export function renderDashboard(data) {
 
     container.innerHTML = `
         <div class="card">
-            <h2><img src="assets/icons/3d-pregnant.png" class="icon-3d" /> Week ${data.currentWeek}</h2>
-
+            <div><img src="assets/icons/3d-pregnant.png" class="icon-3d" /> </div>
+            <h2> Week ${data.currentWeek}</h2>
             <p>Day ${data.currentDay}</p>
             <p><strong>${data.trimester}</strong></p>
         </div>
