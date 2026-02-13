@@ -178,6 +178,24 @@ h3 i {
     vertical-align: middle;
 }
 
+.icon-wrapper {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #ffb3c6,
+        #ffc2d1
+    );
+
+    box-shadow:
+        0 8px 20px rgba(255, 111, 145, 0.25);
+}
 
 .card h2,
 .card h3 {
