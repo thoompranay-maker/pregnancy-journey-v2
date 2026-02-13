@@ -10,30 +10,48 @@ export function calculatePregnancyData(lmp) {
     const dueDate = new Date(lmp);
     dueDate.setDate(dueDate.getDate() + 280);
 
-    const daysRemaining = Math.floor((dueDate - today) / (1000 * 60 * 60 * 24));
+    const timeRemaining = dueDate - today;
+
+    const daysRemaining = Math.floor(
+        timeRemaining / (1000 * 60 * 60 * 24)
+    );
+
+    const hoursRemaining = Math.floor(
+        (timeRemaining / (1000 * 60 * 60)) % 24
+    );
+
+    const minutesRemaining = Math.floor(
+        (timeRemaining / (1000 * 60)) % 60
+    );
+
+    const secondsRemaining = Math.floor(
+        (timeRemaining / 1000) % 60
+    );
 
     const pregnancyProgress = Math.min(
         Math.floor((diffDays / 280) * 100),
         100
     );
 
-let trimester;
+    let trimester;
 
-if (currentWeek <= 13) {
-    trimester = "First Trimester";
-} else if (currentWeek <= 27) {
-    trimester = "Second Trimester";
-} else {
-    trimester = "Third Trimester";
-}
+    if (currentWeek <= 13) {
+        trimester = "First Trimester";
+    } else if (currentWeek <= 27) {
+        trimester = "Second Trimester";
+    } else {
+        trimester = "Third Trimester";
+    }
 
-    
-return {
-    currentWeek,
-    currentDay,
-    dueDate,
-    daysRemaining,
-    pregnancyProgress,
-    trimester
-};
+    return {
+        currentWeek,
+        currentDay,
+        dueDate,
+        daysRemaining,
+        hoursRemaining,
+        minutesRemaining,
+        secondsRemaining,
+        pregnancyProgress,
+        trimester
+    };
 }
