@@ -32,7 +32,7 @@ export function renderDashboard(data) {
 
         <div class="card">
             <div class="icon-wrapper">
-            <div><img src="assets/icons/3d-heart.png" class="icon-3d" /> <div> 
+            <div><img src="assets/icons/3d-heart.png" class="icon-3d" /> </div> 
             </div>
             <h3> Pregnancy Progress</h3>
             <div class="progress-circle">
