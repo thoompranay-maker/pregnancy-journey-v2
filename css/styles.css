@@ -168,3 +168,18 @@ h3 i {
         0 10px 25px rgba(255,111,145,0.15),
         0 4px 10px rgba(0,0,0,0.08);
 }
+
+.icon-3d {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.card h2,
+.card h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
