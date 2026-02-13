@@ -110,3 +110,15 @@ svg {
     font-weight: bold;
 }
 
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.photo-grid img {
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
