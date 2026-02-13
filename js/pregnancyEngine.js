@@ -17,11 +17,23 @@ export function calculatePregnancyData(lmp) {
         100
     );
 
-    return {
-        currentWeek,
-        currentDay,
-        dueDate,
-        daysRemaining,
-        pregnancyProgress
-    };
+let trimester;
+
+if (currentWeek <= 13) {
+    trimester = "First Trimester";
+} else if (currentWeek <= 27) {
+    trimester = "Second Trimester";
+} else {
+    trimester = "Third Trimester";
 }
+
+    
+return {
+    currentWeek,
+    currentDay,
+    dueDate,
+    daysRemaining,
+    pregnancyProgress,
+    trimester
+};
+
