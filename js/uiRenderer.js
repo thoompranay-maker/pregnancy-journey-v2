@@ -48,8 +48,8 @@ export function renderDashboard(data) {
                 </div>
             </div>
         </div>
-        </div>
     `;
+    </div>
 }
 
 export function renderTimeline(data) {
