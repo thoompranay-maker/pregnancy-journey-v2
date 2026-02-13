@@ -5,6 +5,8 @@ import {
     renderTimeline,
     renderMilestones
 } from "./uiRenderer.js";
+import { renderPhotos } from "./uiRenderer.js";
+
 
 const navButtons = document.querySelectorAll(".nav-btn");
 
@@ -22,6 +24,11 @@ function updateScreen(screen) {
     if (screen === "milestones") {
         renderMilestones(data);
     }
+
+    if (screen === "photos") {
+    renderPhotos();
+}
+
 }
 
 navButtons.forEach(button => {
