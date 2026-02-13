@@ -85,3 +85,28 @@ svg {
     font-size: 24px;
     font-weight: bold;
 }
+
+.bottom-nav {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    background: #ffffff;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px;
+    color: #888;
+}
+
+.nav-btn.active {
+    color: #ff6f91;
+    font-weight: bold;
+}
+
