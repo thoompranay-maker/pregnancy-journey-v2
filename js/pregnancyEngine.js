@@ -54,6 +54,11 @@ export function calculatePregnancyData(lmp) {
         pregnancyProgress,
         trimester,
         lmpDateString: lmp.toDateString(),
-    daysSinceLMP: diffDays
+    daysSinceLMP: diffDays,
+            totalWeeks: 40,
+    totalDays: 280,
+    currentDayNumber: diffDays,
+    currentTrimesterNumber,
+    totalTrimesters: 3
     };
 }
