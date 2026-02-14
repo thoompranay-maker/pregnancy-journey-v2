@@ -83,7 +83,7 @@ export function renderDashboard(data) {
                     <circle cx="70" cy="70" r="60" class="circle-bg"/>
                     <circle cx="70" cy="70" r="60"
                         class="circle-progress"
-                        style="stroke-dashoffset: ${440 - (440 * data.pregnancyProgress) / 100}"
+                        style="stroke-dashoffset: ${377 - (377 * data.pregnancyProgress) / 100}"
                     />
                 </svg>
                 <div class="circle-text">
