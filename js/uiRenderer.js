@@ -72,6 +72,8 @@ export function renderDashboard(data) {
                 <p class="bottom-text">days remaining</p>
             </div>
 
+            </div>
+
 <div class="progress-section">
     <div class="card progress-card">
 
@@ -109,7 +111,6 @@ export function renderDashboard(data) {
 
     </div>
 </div>
-        </div>
     `;
 }
 
