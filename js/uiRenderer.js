@@ -72,23 +72,43 @@ export function renderDashboard(data) {
                 <p class="bottom-text">days remaining</p>
             </div>
 
-        <!-- Separate Progress Section -->
-        <div class="progress-section">
-            <div class="card">
-                <h3>Pregnancy Progress</h3>
-                <div class="progress-circle">
-                    <svg width="150" height="150">
-                        <circle cx="75" cy="75" r="65" class="circle-bg"/>
-                        <circle cx="75" cy="75" r="65"
-                            class="circle-progress"
-                            style="stroke-dashoffset: ${440 - (440 * data.pregnancyProgress) / 100}"
-                        />
-                    </svg>
-                    <div class="circle-text">
-                        ${data.pregnancyProgress}%
-                    </div>
+<div class="progress-section">
+    <div class="card progress-card">
+
+        <div class="progress-left">
+            <div class="progress-circle">
+                <svg width="140" height="140">
+                    <circle cx="70" cy="70" r="60" class="circle-bg"/>
+                    <circle cx="70" cy="70" r="60"
+                        class="circle-progress"
+                        style="stroke-dashoffset: ${440 - (440 * data.pregnancyProgress) / 100}"
+                    />
+                </svg>
+                <div class="circle-text">
+                    ${data.pregnancyProgress}%
                 </div>
             </div>
+        </div>
+
+        <div class="progress-right">
+            <h3>Pregnancy Progress</h3>
+
+            <p><strong>Trimester:</strong> 
+                ${data.currentTrimesterNumber} / ${data.totalTrimesters}
+            </p>
+
+            <p><strong>Week:</strong> 
+                ${data.currentWeek} / ${data.totalWeeks}
+            </p>
+
+            <p><strong>Days:</strong> 
+                ${data.currentDayNumber} / ${data.totalDays}
+            </p>
+
+        </div>
+
+    </div>
+</div>
         </div>
     `;
 }
