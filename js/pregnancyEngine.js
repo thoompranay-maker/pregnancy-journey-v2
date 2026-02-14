@@ -33,6 +33,10 @@ export function calculatePregnancyData(lmp) {
         100
     );
 
+    const currentTrimesterNumber =
+    data.trimester === "First Trimester" ? 1 :
+    data.trimester === "Second Trimester" ? 2 : 3;
+
     let trimester;
 
     if (currentWeek <= 13) {
