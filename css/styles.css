@@ -286,7 +286,8 @@ h3 i {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px;
+    gap: 40px;
+    padding: 35px;
     max-width: 900px;
     margin: 60px auto;
 }
@@ -297,17 +298,29 @@ h3 i {
     justify-content: center;
 }
 
+.progress-left {
+    border-right: 1px solid #eee;
+    padding-right: 30px;
+}
+
 .progress-right {
     flex: 2;
 }
 
 .progress-right h3 {
     margin-bottom: 20px;
+    text-align: left;
 }
 
-.progress-right p {
+.stat-line {
+    display: flex;
+    justify-content: space-between;
     font-size: 16px;
-    margin: 10px 0;
+    margin: 12px 0;
+}
+
+.stat-line span:first-child {
+    color: #777;
 }
 
 @media (max-width: 700px) {
@@ -316,11 +329,13 @@ h3 i {
         text-align: center;
     }
 
-    .progress-right {
-        margin-top: 25px;
+    .progress-right h3 {
+        text-align: center;
     }
-}
 
-.progress-left {
-    border-right: 1px solid #eee;
-}
+    .stat-line {
+        justify-content: center;
+        gap: 10px;
+    }
+    }
+
