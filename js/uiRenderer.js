@@ -95,17 +95,20 @@ export function renderDashboard(data) {
         <div class="progress-right">
             <h3>Pregnancy Progress</h3>
 
-            <p><strong>Trimester:</strong> 
-                ${data.currentTrimesterNumber} / ${data.totalTrimesters}
-            </p>
+            <div class="stat-line">
+                <span>Trimester</span>
+                <span>${data.currentTrimesterNumber} / ${data.totalTrimesters}</span>
+            </div>
 
-            <p><strong>Week:</strong> 
-                ${data.currentWeek} / ${data.totalWeeks}
-            </p>
+            <div class="stat-line">
+                <span>Week</span>
+                <span>${data.currentWeek} / ${data.totalWeeks}</span>
+            </div>
 
-            <p><strong>Days:</strong> 
-                ${data.currentDayNumber} / ${data.totalDays}
-            </p>
+            <div class="stat-line">
+                <span>Days</span>
+                <span>${data.currentDayNumber} / ${data.totalDays}</span>
+            </div>
 
         </div>
 
